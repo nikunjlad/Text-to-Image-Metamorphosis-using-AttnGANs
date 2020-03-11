@@ -1,4 +1,5 @@
 from miscc.config import cfg, cfg_from_file
+import numpy as np
 from datasets import TextDataset
 from trainer import condGANTrainer as trainer
 from nltk.tokenize import RegexpTokenizer
@@ -24,7 +25,9 @@ def parse_args():
 
 
 def gen_example(wordtoix, algo):
-    '''generate images from example sentences'''
+    """
+    generate images from example sentences
+    """
 
     filepath = '%s/demo.txt' % (cfg.DATA_DIR)
     data_dic = {}
