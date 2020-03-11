@@ -50,11 +50,11 @@ The data lies in the data directory. A download the bird.zip file and place it i
 We used the following 3 custom statements for generating images and got some appreciable results for the same.
 
 1. a red bird has a white belly and short beak. <br>
-<img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/bird1.png">
+<img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/bird1.png" width="400" height="400">
 2. a bird has long white wings. <br>
-<img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/bird2.png">
+<img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/bird2.png" width="400" height="400">
 3. a green bird has white wings and long tail. <br>
-<img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/bird3.png">
+<img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/bird3.png" width="400" height="400">
 
 ## Developers
 
