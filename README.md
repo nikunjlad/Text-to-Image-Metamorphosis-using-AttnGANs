@@ -7,7 +7,7 @@
 <img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/framework.png">
 
 ## Description &nbsp; 
-[![](https://img.shields.io/badge/GitHub-taoxugit-red)](https://github.com/taoxugit/AttnGAN) &nbsp;
+[![](https://img.shields.io/badge/GitHub-taoxugit-red)](https://github.com/davidstap/AttnGAN) &nbsp;
 [![](https://img.shields.io/badge/arXiv-AttnGAN-lightgrey)](https://arxiv.org/abs/1711.10485)
 
 Generative Adversarial Networks are used heavily for generating synthetic data and for upsampling an unbalanced dataset. However, it has more to it and one of it's application can be observed in this repository. Text-to-Image Metamorphosis is translation of a text to an Image. Essentially, it is inverse of Image Captioning. In Image Captioning, given an image, we develop a model to generate a caption for it based on the underlying scene. Text-to-Image Metamorphosis, generates an image from a corresponding text by understanding the language semantics. Various works have been done in this domain, the most notable being developing an Attentional GAN model to develop images given a local word feature vector and a global sentence vector. Currently we have only worked on AttnGAN. Further up, we intend to implement [MirrorGAN](https://arxiv.org/abs/1903.05854), an extension of AttnGAN to generate images from sentences and reconstruct the sentences from the generated image, so as to see how similar are the input and output sentences. Concretely, we would like a input and output sentences to be as close to each other (like a mirror) so as to conclude, the underlying generation is close to ground truth.
