@@ -1,7 +1,9 @@
 
 # Text-to-Image Metamorphosis &nbsp; ![](https://img.shields.io/badge/release-v1.0-orange)
 
-![](https://img.shields.io/badge/license-MIT-blue) &nbsp;
+![](https://img.shields.io/badge/license-MIT-blue) &nbsp;<br>
+
+## Architecture &nbsp;
 <img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/framework.png">
 
 ## Description &nbsp; 
