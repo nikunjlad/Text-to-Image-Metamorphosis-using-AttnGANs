@@ -1,5 +1,5 @@
 
-# Text-to-Image Metamorphosis &nbsp; ![](https://img.shields.io/badge/release-v1.0-orange)
+# Text-to-Image Metamorphosis using GANs &nbsp; ![](https://img.shields.io/badge/release-v1.0-orange)
 
 ![](https://img.shields.io/badge/license-MIT-blue) &nbsp;<br>
 
