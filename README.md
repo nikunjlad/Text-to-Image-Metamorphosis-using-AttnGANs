@@ -44,7 +44,7 @@ The data lies in the data directory. A download the bird.zip file and place it i
 
 ## Attention Maps &nbsp;
 
-<img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/attention_maps0.png" width="700" height="700">
+<img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/attention_maps0.png">
 
 ## How to run? &nbsp;
 
