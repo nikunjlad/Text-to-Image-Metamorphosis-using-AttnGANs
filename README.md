@@ -11,25 +11,23 @@
 Generative Adversarial Networks are used heavily for generating synthetic data and for upsampling an unbalanced dataset. However, it has more to it and one of it's application can be observed in this repository. Text-to-Image Metamorphosis is translation of a text to an Image. Essentially, it is inverse of Image Captioning. In Image Captioning, given an image, we develop a model to generate a caption for it based on the underlying scene. Text-to-Image Metamorphosis, generates an image from a corresponding text by understanding the language semantics. Various works have been done in this domain, the most notable being developing an Attentional GAN model to develop images given a local word feature vector and a global sentence vector. Currently we have only worked on AttnGAN. Further up, we intend to implement [MirrorGAN](https://arxiv.org/abs/1903.05854), an extension of AttnGAN to generate images from sentences and reconstruct the sentences from the generated image, so as to see how similar are the input and output sentences. Concretely, we would like a input and output sentences to be as close to each other (like a mirror) so as to conclude, the underlying generation is close to ground truth.
 
 ## Dependencies &nbsp;
-![](https://img.shields.io/badge/python-2.7-yellowgreen) &nbsp; ![](https://img.shields.io/badge/install%20with-pip-orange)
+![](https://img.shields.io/badge/python-3.6-yellowgreen) &nbsp; ![](https://img.shields.io/badge/install%20with-pip-orange)
 
-You can either create a virtualenv or a docker container for running the project. <br>
-Necessary libraries include the following and are installed using pip.
+You can either create a virtualenv or a docker container for running the project. We went about creating a virtualenv <br>
+Necessary libraries include but not limited to the following and are installed using pip.
 
-python>=2.7.0 <br>
-numpy>=1.16.0 <br>
-scipy>=1.2.0 <br>
-chumpy>=0.65 <br>
-keras>=2.2.0 <br>
-tensorflow==2.0.2 <br>
-tensorboard==2.0.0 <br>
+python==3.6.5 <br>
+numpy=>=1.18.1 <br>
+pandas>=1.0.1 <br>
+nltk>=3.4.5 <br>
+torch>=1.4.0 <br>
+torchvision>=0.5.0 <br>
 
-For an entire list of libraries refer the [requirements.txt](http://gitlab.uiius.com/uvision/texture3d/blob/master/requirements.txt) file. <br>
-For Docker setup refer Docker section below.
+For an entire list of libraries for this project refer the [requirements.txt](http://gitlab.uiius.com/uvision/texture3d/blob/master/requirements.txt) file. <br>
 
 ## System Information &nbsp; ![](https://img.shields.io/badge/Ubuntu-18.04-blueviolet)
 
-Developed and configured this project along with Docker containerization on Ubuntu 18.04.
+Developed and configured this project on MAC using PyCharm IDE and trained the model on Google Cloud using NVidia Tesla T4 GPU
 Data lies in the following path:
 
 /mnt/data/texture3D/images/ : directory containing images each of 1024x1024 dimension. &nbsp;
