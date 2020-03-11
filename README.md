@@ -36,11 +36,11 @@ Developed and configured this project on MAC using PyCharm IDE and trained the m
 
 The data lies in the data directory. A download the bird.zip file and place it in the data directory in this repository. Following are the files in the bird.zip file.
 
-<b>/birds/CUB_200_2011/</b> : It contains an images directory which holds 200 bird class directories. The bird dataset has 200 classes of birds each class has ~60 images of birds.
-<b>/birds/CUB_200_2011/bounding_boxes.txt</b> : file which contains bounding box information of the birds in the true images. The annotations are in [top-left-x, top-left-y, width, height] format.
-<b>/birds/CUB_200_2011/classes.txt</b> : file containing names of all the 200 classes.
-<b>/birds/CUB_200_2011/image_class_labels.txt</b> : file containing class labels. First 60 lines belong to image 1, next 60 lines belong to image 2 and so and so forth.
-<b>/birds/CUB_200_2011/images.txt</b> : file containing all the image names in the dataset. this is about ~12000 images, 60 images per class.
+1. <b>/birds/CUB_200_2011/</b> : It contains an images directory which holds 200 bird class directories. The bird dataset has 200 classes of birds each class has ~60 images of birds.
+2. <b>/birds/CUB_200_2011/bounding_boxes.txt</b> : file which contains bounding box information of the birds in the true images. The annotations are in [top-left-x, top-left-y, width, height] format.
+3. <b>/birds/CUB_200_2011/classes.txt</b> : file containing names of all the 200 classes.
+4. <b>/birds/CUB_200_2011/image_class_labels.txt</b> : file containing class labels. First 60 lines belong to image 1, next 60 lines belong to image 2 and so and so forth.
+5. <b>/birds/CUB_200_2011/images.txt</b> : file containing all the image names in the dataset. this is about ~12000 images, 60 images per class.
 
 ## Attention Maps &nbsp;
 
