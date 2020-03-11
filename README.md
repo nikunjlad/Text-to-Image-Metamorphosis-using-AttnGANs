@@ -27,19 +27,26 @@ torchvision>=0.5.0 <br>
 
 For an entire list of libraries for this project refer the [requirements.txt](https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/requirements.txt) file. <br>
 
-## System Information &nbsp; ![](https://img.shields.io/badge/Ubuntu-18.04-blueviolet)
+## System Information &nbsp; 
+![](https://img.shields.io/badge/Ubuntu-18.04-blueviolet) 
+![](https://img.shields.io/badge/Google%20-Cloud-yellow)
+![](https://img.shields.io/badge/NVidia-TeslaT4-red)
 
 Developed and configured this project on MAC using PyCharm IDE and trained the model on Google Cloud using NVidia Tesla T4 GPUs <br>
 
 The data lies in the data directory. A download the bird.zip file and place it in the data directory in this repository. Following are the files in the bird.zip file.
 
-/birds/CUB_200_2011/ : It contains an images directory which holds 200 bird class directories. The bird dataset has 200 classes of birds each class has ~60 images of birds.
-/birds/CUB_200_2011/bounding_boxes.txt : file which contains bounding box information of the birds in the true images. The annotations are in [top-left-x, top-left-y, width, height] format.
-/birds/CUB_200_2011/classes.txt : file containing names of all the 200 classes.
-/birds/CUB_200_2011/image_class_labels.txt : file containing class labels. First 60 lines belong to image 1, next 60 lines belong to image 2 and so and so forth.
-/birds/CUB_200_2011/images.txt : file containing all the image names in the dataset. this is about ~12000 images, 60 images per class.
+<b>/birds/CUB_200_2011/</b> : It contains an images directory which holds 200 bird class directories. The bird dataset has 200 classes of birds each class has ~60 images of birds.
+<b>/birds/CUB_200_2011/bounding_boxes.txt</b> : file which contains bounding box information of the birds in the true images. The annotations are in [top-left-x, top-left-y, width, height] format.
+<b>/birds/CUB_200_2011/classes.txt</b> : file containing names of all the 200 classes.
+<b>/birds/CUB_200_2011/image_class_labels.txt</b> : file containing class labels. First 60 lines belong to image 1, next 60 lines belong to image 2 and so and so forth.
+<b>/birds/CUB_200_2011/images.txt</b> : file containing all the image names in the dataset. this is about ~12000 images, 60 images per class.
 
-## How to run?
+## Attention Maps &nbsp;
+
+<img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/attention_maps0.png" width="700" height="700">
+
+## How to run? &nbsp;
 
 Pre-train DAMSM models:
   - For bird dataset: `python pretrain_DAMSM.py --cfg cfg/DAMSM/bird.yml --gpu 0`
@@ -55,9 +62,7 @@ Run `python main.py --cfg cfg/eval_bird.yml --gpu 1` to generate examples from c
 - Change the `eval_*.yml` files to generate images from other pre-trained models. 
 - Input your own sentence in "./data/birds/example_captions.txt" if you wannt to generate images from customized sentences. 
 
-**Validation**
-
-## Results
+## Results &nbsp;
 
 We used the following 3 custom statements for generating images and got some appreciable results for the same.
 
@@ -68,6 +73,6 @@ We used the following 3 custom statements for generating images and got some app
 3. a green bird has white wings and long tail. <br>
 <img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/bird3.png" width="600" height="600">
 
-## Developers
+## Developers &nbsp;
 
 [![](https://img.shields.io/badge/Nikunj-Lad-yellow)](https://github.com/nikunjlad)
