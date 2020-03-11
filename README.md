@@ -64,7 +64,7 @@ Run `python main.py --cfg cfg/eval_bird.yml --gpu 1` to generate examples from c
 
 ## Results &nbsp;
 
-We used the following 3 custom statements for generating images and got some appreciable results for the same.
+Given the following 3 statements to the model, we get some realistic bird images as results.
 
 1. a red bird has a white belly and short beak. <br>
 <img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/bird1.png" width="600" height="600">
