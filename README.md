@@ -2,7 +2,7 @@
 # Text-to-Image Metamorphosis &nbsp; ![](https://img.shields.io/badge/release-v1.0-orange)
 
 ![](https://img.shields.io/badge/license-MIT-blue) &nbsp;
-![](https://img.shields.io/badge/Nikunj-Lad-yellow)
+
 
 ## Description &nbsp; 
 [![](https://img.shields.io/badge/GitHub-thmoa-red)](https://github.com/thmoa/tex2shape) &nbsp;
@@ -74,3 +74,7 @@ In above command, the data directory from <b>/mnt/interns/nikunj/data/texture3D/
 1. Run build.sh to build docker image.
 2. Run run.sh to start docker container. Make sure to enable X11 forwarding between docker and host machine. Run xhost local:docker prior to running the container.
 3. Check if inside /app directory. Inside /app directory, execute run.sh and enter the image and IUV map image names for generating 3D  models. An obj file and pickle file is saved in the output directory.
+
+## Developers
+
+![](https://img.shields.io/badge/Nikunj-Lad-yellow)
