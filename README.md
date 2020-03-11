@@ -23,7 +23,7 @@ nltk>=3.4.5 <br>
 torch>=1.4.0 <br>
 torchvision>=0.5.0 <br>
 
-For an entire list of libraries for this project refer the [requirements.txt](http://gitlab.uiius.com/uvision/texture3d/blob/master/requirements.txt) file. <br>
+For an entire list of libraries for this project refer the [requirements.txt](https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/requirements.txt) file. <br>
 
 ## System Information &nbsp; ![](https://img.shields.io/badge/Ubuntu-18.04-blueviolet)
 
