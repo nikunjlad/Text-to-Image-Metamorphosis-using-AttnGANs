@@ -77,4 +77,4 @@ In above command, the data directory from <b>/mnt/interns/nikunj/data/texture3D/
 
 ## Developers
 
-![](https://img.shields.io/badge/Nikunj-Lad-yellow)
+![https://github.com/nikunjlad](https://img.shields.io/badge/Nikunj-Lad-yellow)
