@@ -49,9 +49,12 @@ The data lies in the data directory. A download the bird.zip file and place it i
 
 We used the following 3 custom statements for generating images and got some appreciable results for the same.
 
-1. a bird is blue with black and has a long beak.
-2. a red bird has a white belly and short beak.
-3. a bird has long white wings.
+1. a red bird has a white belly and short beak. <br>
+<img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/bird1.png">
+2. a bird has long white wings. <br>
+<img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/bird2.png">
+3. a green bird has white wings and long tail. <br>
+<img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/bird3.png">
 
 ## Developers
 
