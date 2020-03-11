@@ -5,7 +5,7 @@
 
 
 ## Description &nbsp; 
-[![](https://img.shields.io/badge/GitHub-thmoa-red)](https://github.com/thmoa/tex2shape) &nbsp;
+[![](https://img.shields.io/badge/GitHub-taoxugit-red)](https://github.com/taoxugit/AttnGAN) &nbsp;
 [![](https://img.shields.io/badge/arXiv-AttnGAN-lightgrey)](https://arxiv.org/abs/1711.10485)
 
 This project is used to generate 3D model of an image consisting of a person, provided the IUV maps and an input image is provided. The input image needs to be of 1024x1024 dimension. For more information click on the GitHub shiled above. For the concepts involved in this project refer click on the arXiv shield above.
