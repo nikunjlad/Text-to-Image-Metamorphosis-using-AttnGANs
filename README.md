@@ -27,7 +27,7 @@ torchvision>=0.5.0 <br>
 
 For an entire list of libraries for this project refer the [requirements.txt](https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/requirements.txt) file. <br>
 
-## System Information &nbsp; 
+## Project Structure &nbsp; 
 ![](https://img.shields.io/badge/Ubuntu-18.04-blueviolet) 
 ![](https://img.shields.io/badge/Google%20-Cloud-yellow)
 ![](https://img.shields.io/badge/NVidia-TeslaT4-red)
