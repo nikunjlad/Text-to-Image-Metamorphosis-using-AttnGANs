@@ -72,7 +72,9 @@ Run
 python main.py --cfg cfg/eval_bird.yml --gpu 1
 ```
 to generate examples from captions in files listed in <b>"/data/birds/example_filenames.txt"</b>. Results are saved to <b>/output/samples/</b> directory. 
-- Input your own sentence in <b>"/data/birds/example_captions.txt">/b> if you wannt to generate images from customized sentences. 
+- Input your own sentence in <b>"/data/birds/example_captions.txt"</b> if you wannt to generate images from customized sentences. 
+
+NOTE: Use -1 value for the gpu argunment, if you don't have GPU on your system and want to use CPU. Else, mention the GPU id on which to execute your code. In either case, your system will fall back to CPU if no GPU's are detected.
 
 ## Results &nbsp;
 
