@@ -16,7 +16,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description='Train a AttnGAN network')
     parser.add_argument('--cfg', dest='cfg_file',
                         help='optional config file',
-                        default='cfg/bird_attn2.yml', type=str)
+                        default='cfg/eval_bird.yml', type=str)
     parser.add_argument('--gpu', dest='gpu_id', type=int, default=-1)
     parser.add_argument('--data_dir', dest='data_dir', type=str, default='')
     parser.add_argument('--manualSeed', type=int, help='manual seed')
@@ -29,7 +29,7 @@ def gen_example(wordtoix, algo):
     generate images from example sentences
     """
 
-    filepath = '%s/demo.txt' % (cfg.DATA_DIR)
+    filepath = '%s/example_filenames.txt' % (cfg.DATA_DIR)
     data_dic = {}
     with open(filepath, "r") as f:
         filenames = f.read().split('\n')

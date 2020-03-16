@@ -10,6 +10,7 @@ cfg = __C
 __C.DATASET_NAME = 'birds'
 __C.CONFIG_NAME = ''
 __C.DATA_DIR = ''
+__C.OUTPUT_DIR = ''
 __C.GPU_ID = 0
 __C.CUDA = True
 __C.WORKERS = 6

@@ -2,6 +2,7 @@ CONFIG_NAME: 'attn2'
 
 DATASET_NAME: 'birds'
 DATA_DIR: '../data/birds'
+OUTPUT_DIR: '../output'
 GPU_ID: 3
 WORKERS: 1
 

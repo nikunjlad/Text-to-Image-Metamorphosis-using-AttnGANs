@@ -13,7 +13,7 @@ from datasets import prepare_data
 from model import RNN_ENCODER, CNN_ENCODER
 from miscc.losses import words_loss
 from miscc.losses import discriminator_loss, generator_loss, KL_loss
-import os, time, torch
+import os, time, torch, datetime
 import numpy as np
 
 
@@ -479,7 +479,8 @@ class condGANTrainer:
                 netG = G_DCGAN()
             else:
                 netG = G_NET()
-            s_tmp = cfg.TRAIN.NET_G[:cfg.TRAIN.NET_G.rfind('.pth')]
+            # s_tmp = cfg.TRAIN.NET_G[:cfg.TRAIN.NET_G.rfind('.pth')]
+            s_tmp = cfg.OUTPUT_DIR + "/samples"
             model_dir = cfg.TRAIN.NET_G
             state_dict = \
                 torch.load(model_dir, map_location=lambda storage, loc: storage)
@@ -490,7 +491,8 @@ class condGANTrainer:
 
             netG.eval()
             for key in data_dic:
-                save_dir = '%s/%s' % (s_tmp, key)
+                current_time = datetime.datetime.now().strftime("%Y%m%d_%H.%M")
+                save_dir = '%s/%s' % (s_tmp, key) + "_" + current_time
                 mkdir_p(save_dir)
                 captions, cap_lens, sorted_indices = data_dic[key]
 
