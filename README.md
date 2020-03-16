@@ -56,14 +56,14 @@ Attention maps are generated along the course of training either while using the
 ## Run and Evaluate &nbsp;
 
 Pre-train DAMSM models: 
-  - For bird dataset, download the pretrained model of [AttnGAN](https://drive.google.com/file/d/1UbTP2Y4Bx9jHgLQEUJ-D6qqYIt3jHbGz/view?usp=sharing) and place it in the models directory. Use the following command to use pretrained model to generate images.
+  - For bird dataset, download the pretrained model of [AttnGAN](https://drive.google.com/file/d/1UbTP2Y4Bx9jHgLQEUJ-D6qqYIt3jHbGz/view?usp=sharing) and place it in the <b>models</b> directory. Use the following command to use pretrained model to generate images.
   ```python 
   python pretrain_DAMSM.py --cfg cfg/DAMSM/bird.yml --gpu 0
   ```
 - Train AttnGAN models:
   - For bird dataset, to train the entire AttnGAN from scratch, use the following command. 
   ```python 
-  python main.py --cfg cfg/bird_attn2.yml --gpu 2`
+  python main.py --cfg cfg/bird_attn2.yml --gpu 2
   ```
 - `*.yml` files are example configuration files for training/evaluation our models.
 
@@ -80,12 +80,14 @@ NOTE: Use -1 value for the gpu argunment, if you don't have GPU on your system a
 
 Given the following 3 statements to the model, we get some realistic bird images as results.
 
-1. a red bird has a white belly and short beak. <br>
-<img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/bird1.png" width="600" height="600">
-2. a bird has long white wings. <br>
-<img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/bird2.png" width="600" height="600">
-3. a green bird has white wings and long tail. <br>
-<img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/bird3.png" width="600" height="600">
+1. A red bird with long beak and black wings having a long tail. <br>
+<img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/bird1.png" width="600" height="500">
+2. this bird has a dark light overall body color, with long neck and short legs. <br>
+<img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/bird2.png" width="600" height="500">
+3. A bird with yellow wings and dark eyes and black beak. <br>
+<img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/bird3.png" width="600" height="500">
+
+We documented our work as a presentation. Feel free to check out the presentation [here]().
 
 ## Developers &nbsp;
 
