@@ -50,7 +50,7 @@ Download the pretrained [DAMSM Encoders and Decoders](https://drive.google.com/d
 
 ## Attention Maps &nbsp;
 
-Attention maps are generated along the course of training either while using the pretrained models or while training AttnGAN from scratch. These are stored in the <b>/output/birds_DAMSM_<timestamp>/</b> directory. <br><br>
+Attention maps are generated along the course of training either while using the pretrained models or while training AttnGAN from scratch. These are stored in the <b>/output/birds_DAMSM_<timestamp>/</b> directory. <br>
   
 <img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/attention_maps0.png">
 
@@ -81,12 +81,12 @@ NOTE: Use -1 value for the gpu argunment, if you don't have GPU on your system a
 
 Given the following 3 statements to the model, we get some realistic bird images as results.
 
-1. A red bird with long beak and black wings having a long tail. <br>
-<img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/bird1.png" width="600" height="500">
-2. this bird has a dark light overall body color, with long neck and short legs. <br>
-<img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/bird2.png" width="600" height="500">
-3. A bird with yellow wings and dark eyes and black beak. <br>
-<img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/bird3.png" width="600" height="500">
+- A red bird with long beak and black wings having a long tail. <br>
+  <img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/bird1.png" width="600" height="500">
+- this bird has a dark light overall body color, with long neck and short legs. <br>
+  <img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/bird2.png" width="600" height="500">
+- A bird with yellow wings and dark eyes and black beak. <br>
+  <img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/bird3.png" width="600" height="500">
 
 We documented our work as a presentation. Feel free to check out the presentation [here](https://github.com/nikunjlad/Text-to-Image-Metamorphosis-using-GANs/blob/master/docs/Text-to-Image-Metamorphosis-using-GANs.pptx).
 
