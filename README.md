@@ -35,7 +35,7 @@ For an entire list of libraries for this project refer the [requirements.txt](ht
 Developed and configured this project on MAC using PyCharm IDE and trained the model on Google Cloud using NVidia Tesla T4 GPUs <br>
 
 #### Birds data directory
-The data lies in the data directory. A download the bird.zip file and place it in the data directory in this repository. Following are the files in the bird.zip file.
+The data lies in the data directory. Download the [bird.zip](https://drive.google.com/file/d/1v0CIe8psyLI0Yle2YylrL91QnEdjdSzP/view?usp=sharing) file and place the extracted bird directory in the data directory in this repository. Following are the files in the bird.zip file.
 
 1. <b>/birds/CUB_200_2011/</b> : It contains an images directory which holds 200 bird class directories. The bird dataset has 200 classes of birds each class has ~60 images of birds.
 2. <b>/birds/CUB_200_2011/bounding_boxes.txt</b> : file which contains bounding box information of the birds in the true images. The annotations are in [top-left-x, top-left-y, width, height] format.
@@ -45,27 +45,34 @@ The data lies in the data directory. A download the bird.zip file and place it i
 
 #### DAMSM Models
 
-Download the pretrained [DAMSM Encoders and Decoders](https://drive.google.com/drive/u/0/folders/1KlhVPPRtczelfKkGDhcjkKtJMssi9DIZ) and place it in the <b>DAMSMencoders</b> directory
+Download the pretrained [DAMSM Encoders and Decoders](https://drive.google.com/drive/u/0/folders/1KlhVPPRtczelfKkGDhcjkKtJMssi9DIZ), extract and place the birds directory in the <b>DAMSMencoders</b> directory. This directory contains the RNN Text Encoder and the CNN Image Encoder models.
+
 
 ## Attention Maps &nbsp;
 
+Attention maps are generated along the course of training either while using the pretrained model or while 
 <img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/attention_maps0.png">
 
-## How to run? &nbsp;
+## Run and Evaluate &nbsp;
 
-Pre-train DAMSM models:
-  - For bird dataset: `python pretrain_DAMSM.py --cfg cfg/DAMSM/bird.yml --gpu 0`
-  - For coco dataset: `python pretrain_DAMSM.py --cfg cfg/DAMSM/coco.yml --gpu 1`
- 
+Pre-train DAMSM models: 
+  - For bird dataset, download the pretrained model of [AttnGAN](https://drive.google.com/file/d/1UbTP2Y4Bx9jHgLQEUJ-D6qqYIt3jHbGz/view?usp=sharing) and place it in the models directory. Use the following command to use pretrained model to generate images.
+  ```python 
+  python pretrain_DAMSM.py --cfg cfg/DAMSM/bird.yml --gpu 0
+  ```
 - Train AttnGAN models:
-  - For bird dataset: `python main.py --cfg cfg/bird_attn2.yml --gpu 2`
-  - For coco dataset: `python main.py --cfg cfg/coco_attn2.yml --gpu 3`
-
+  - For bird dataset, to train the entire AttnGAN from scratch, use the following command. 
+  ```python 
+  python main.py --cfg cfg/bird_attn2.yml --gpu 2`
+  ```
 - `*.yml` files are example configuration files for training/evaluation our models.
 
-Run `python main.py --cfg cfg/eval_bird.yml --gpu 1` to generate examples from captions in files listed in "./data/birds/example_filenames.txt". Results are saved to `DAMSMencoders/`. 
-- Change the `eval_*.yml` files to generate images from other pre-trained models. 
-- Input your own sentence in "./data/birds/example_captions.txt" if you wannt to generate images from customized sentences. 
+Run 
+```python
+python main.py --cfg cfg/eval_bird.yml --gpu 1
+```
+to generate examples from captions in files listed in <b>"/data/birds/example_filenames.txt"</b>. Results are saved to <b>/output/samples/</b> directory. 
+- Input your own sentence in <b>"/data/birds/example_captions.txt">/b> if you wannt to generate images from customized sentences. 
 
 ## Results &nbsp;
 
