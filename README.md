@@ -50,7 +50,8 @@ Download the pretrained [DAMSM Encoders and Decoders](https://drive.google.com/d
 
 ## Attention Maps &nbsp;
 
-Attention maps are generated along the course of training either while using the pretrained models or while training AttnGAN from scratch. These are stored in the <b>/output/birds_DAMSM_<timestamp>/</b> directory. <br>
+Attention maps are generated along the course of training either while using the pretrained models or while training AttnGAN from scratch. These are stored in the <b>/output/birds_DAMSM_<timestamp>/</b> directory. <br><br>
+  
 <img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/attention_maps0.png">
 
 ## Run and Evaluate &nbsp;
