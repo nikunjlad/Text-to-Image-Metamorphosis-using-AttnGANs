@@ -87,6 +87,8 @@ Given the following 3 statements to the model, we get some realistic bird images
 3. A bird with yellow wings and dark eyes and black beak. <br>
 <img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/bird3.png" width="600" height="500">
 
+We documented our work as a presentation. Feel free to check out the presentation [here]().
+
 ## Developers &nbsp;
 
 [![](https://img.shields.io/badge/Nikunj-Lad-yellow)](https://github.com/nikunjlad)
