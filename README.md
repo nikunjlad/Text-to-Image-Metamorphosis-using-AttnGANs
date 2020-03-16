@@ -87,7 +87,7 @@ Given the following 3 statements to the model, we get some realistic bird images
 3. A bird with yellow wings and dark eyes and black beak. <br>
 <img src="https://github.com/nikunjlad/Text-to-Image-Metamorphosis/blob/master/assets/bird3.png" width="600" height="500">
 
-We documented our work as a presentation. Feel free to check out the presentation [here]().
+We documented our work as a presentation. Feel free to check out the presentation [here](https://github.com/nikunjlad/Text-to-Image-Metamorphosis-using-GANs/blob/master/docs/Text-to-Image-Metamorphosis-using-GANs.pptx).
 
 ## Developers &nbsp;
 
