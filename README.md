@@ -34,6 +34,7 @@ For an entire list of libraries for this project refer the [requirements.txt](ht
 
 Developed and configured this project on MAC using PyCharm IDE and trained the model on Google Cloud using NVidia Tesla T4 GPUs <br>
 
+#### Birds data directory
 The data lies in the data directory. A download the bird.zip file and place it in the data directory in this repository. Following are the files in the bird.zip file.
 
 1. <b>/birds/CUB_200_2011/</b> : It contains an images directory which holds 200 bird class directories. The bird dataset has 200 classes of birds each class has ~60 images of birds.
@@ -41,6 +42,10 @@ The data lies in the data directory. A download the bird.zip file and place it i
 3. <b>/birds/CUB_200_2011/classes.txt</b> : file containing names of all the 200 classes.
 4. <b>/birds/CUB_200_2011/image_class_labels.txt</b> : file containing class labels. First 60 lines belong to image 1, next 60 lines belong to image 2 and so and so forth.
 5. <b>/birds/CUB_200_2011/images.txt</b> : file containing all the image names in the dataset. this is about ~12000 images, 60 images per class.
+
+#### DAMSM Models
+
+Download the pretrained [DAMSM Encoders and Decoders](https://drive.google.com/drive/u/0/folders/1KlhVPPRtczelfKkGDhcjkKtJMssi9DIZ) and place it in the <b>DAMSMencoders</b> directory
 
 ## Attention Maps &nbsp;
 
