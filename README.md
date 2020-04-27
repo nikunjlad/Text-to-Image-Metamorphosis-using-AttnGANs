@@ -58,18 +58,18 @@ Attention maps are generated along the course of training either while using the
 
 Pre-train DAMSM models: 
   - For bird dataset, download the pretrained model of [AttnGAN](https://drive.google.com/file/d/1UbTP2Y4Bx9jHgLQEUJ-D6qqYIt3jHbGz/view?usp=sharing) and place it in the <b>models</b> directory. Use the following command to use pretrained model to generate images.
-  ```python 
+  ```bash
   python pretrain_DAMSM.py --cfg cfg/DAMSM/bird.yml --gpu 0
   ```
 - Train AttnGAN models:
   - For bird dataset, to train the entire AttnGAN from scratch, use the following command. 
-  ```python 
+  ```bash
   python main.py --cfg cfg/bird_attn2.yml --gpu 2
   ```
 - `*.yml` files are example configuration files for training/evaluation our models.
 
 Run 
-```python
+```bash
 python main.py --cfg cfg/eval_bird.yml --gpu 1
 ```
 to generate examples from captions in files listed in <b>"/data/birds/example_filenames.txt"</b>. Results are saved to <b>/output/samples/</b> directory. 
